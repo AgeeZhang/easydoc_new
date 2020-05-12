@@ -1,0 +1,15 @@
+#{extends "main_list.html"/}
+%{
+    def map = [:]
+    map['object'] 		= "menu"
+    map['fields'] 		= ['name','url','target','icon','sort','flag']
+    map['widths'] 		= ['27','20','10','10','10','10']
+    map['width']		= 650
+    map['height']		= 350
+    map['searchFields'] = ['id','name','url']
+}%
+#{table.list map}
+#{table.custom 'flag'}
+${row.flag==1?"使用":"停用"}
+#{/table.custom}
+#{/table.list}

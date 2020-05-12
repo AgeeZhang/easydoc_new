@@ -1,0 +1,19 @@
+#{extends "main_list.html"/}
+%{
+    def map = [:]
+    map['object'] 		= "user"
+    map['fields'] 		= ['truename','sex','tel','mobile','cornet','login','status','depart','post']
+    map['widths'] 		= ['9','5','10','10','10','8','10','10','10']
+    map['width']		= 800
+    map['height']		= 360
+    map['option_width']	= 15
+    map['searchFields']         = ['username','truename']
+}%
+#{table.list map}
+#{table.custom 'status'}
+${row.status==1?"使用":"停用"}
+#{/table.custom}
+#{table.custom 'login'}
+${row.login==0||row.login==null?"0":row.login}
+#{/table.custom}
+#{/table.list}

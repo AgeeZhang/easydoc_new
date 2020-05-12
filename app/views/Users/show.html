@@ -1,0 +1,30 @@
+#{extends "main_list.html"/}
+#{set title:"修改员工"/}
+%{
+map = [:]
+map['fields']		=	['form_s','username','password','truename','sex','email','tel','mobile','cornet','status','depart','post','role','remark','form_e']
+map['type']			=	['text','text','password','text','select','text','text','text','text','select','relationTree','word','relation','longtext','text']
+map['widths']		=	['50','50','50','50','50','50','50','50','50','50','50','50','50','100','50']
+map['input']  		= 	[:]
+map['input']['sex']	=	['男':'男','女':'女']
+map['input']['status']	=	['1':'启用','2':'停用']
+map['input']['depart']	=	['sql':'from Depart where flag = 1 order by sort','name':'id']
+map['input']['post']	=	['type':1,'to':'','field':'name']
+map['input']['role']	=	['sql':'from Role order by sort','name':'id']
+map['input']['remark']	=	['rows':'5','cols':'30']
+
+}%
+#{form @@save(object.id)}
+#{table.form map}
+#{table.custom 'password'}
+<input  type="hidden" name="object.password" value="${object.password}"/>
+<div class="field" style="width: 100%;">
+	<label for="object_password">
+		密码
+	</label>
+	<input id="object_password" style="width:148" class="txt01 " type="password" name="object.password2" value=""/>&nbsp;&nbsp;<font color="red">不修改密码此处为空</font>
+</div>
+
+#{/table.custom}
+#{/table.form}
+#{/form}

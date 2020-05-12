@@ -1,0 +1,11 @@
+#{extends "main_list.html"/}
+%{
+    def map = [:]
+    map['object'] 		= "role"
+    map['fields'] 		= ['name','sort']
+    map['widths'] 		= ['77','10','10']
+    map['width']		= 600
+    map['height']		= 400
+    map['searchFields'] = ['name']
+}%
+#{table.list map/}

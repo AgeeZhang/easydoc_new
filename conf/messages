@@ -1,0 +1,443 @@
+﻿# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+hiarMaterialType.name = 名称
+hiarMaterialType.sort = 排序
+hiarMaterialType.flag = 状态
+hiarMaterialType.notice = 备注
+secure.logout=退出成功
+validation.required=必填
+validation.minSize=长度不能小于%2$d
+validation.maxSize=长度不能大于%2$d
+validation.email=必须是Email格式
+validation.range=必须大于%2$d小于%3$d
+validation.min=必须大于%2$d
+validation.max=必须小于%2$d
+validation.match=Must match %2$s
+validation.isTrue=Must be checked
+validation.equals=不相等
+validation.invalid=Incorrect value
+validation.future=Must be in the future
+validation.after=Must be after %2$s
+validation.past=Must be in the past
+validation.before=Must be before %2$s
+validation.object=验证数据错误
+validation.notFound=Object not found for id %2$s
+validation.url=必须是链接格式
+validation.telephone=电话格式错误
+validation.mobile=手机格式错误
+validation.invalid  = 格式错误
+
+secure.login.empty = 用户名或者密码不能为空!
+secure.login.error = 用户名或者密码错误!
+secure.logout	= 退出成功!
+secure.title    = 登录
+secure.username = 用户名
+secure.password = 密&nbsp;&nbsp;&nbsp;码
+secure.remember = 记住
+secure.signin	= 登录
+
+option.title	=	操作
+option.save		=	保存
+option.close	=	关闭
+option.delete	=	删除
+
+menu.title		=	菜单列表
+menu.form		=	菜单信息
+menu.form1		=	菜单信息
+menu.id			=	编号
+menu.pid		=	上级菜单
+menu.name		=	菜单名
+menu.url		=	链接
+menu.target		=	打开方式
+menu.icon		=	显示图片
+menu.sort		=	排序
+menu.flag		=	状态
+
+role.title		=	权限列表
+role.form		=	权限信息
+role.form1		=	权限信息
+role.name		=	权限名
+role.sort		=	排序
+role.menu		=	拥有菜单
+
+depart.title	=	部门信息列表
+depart.form		=	部门信息
+depart.form1		=	部门信息
+depart.pid		=	选择上级
+depart.name		=	名称
+depart.sort		=	排序
+depart.flag		=	状态
+depart.notice	=	描述
+
+user.title		=	员工列表
+user.form1		=	员工信息
+user.username	=	用户名<font color="red">*</font>
+user.password	=	密码
+user.truename	=	真实姓名
+user.sex		=	性别
+user.email		=	电子邮件
+user.tel		=	联系电话
+user.mobile		=	移动电话
+user.cornet		=	短号
+user.login		=	登入次数
+user.status		=	状态
+user.depart		=	部门
+object.post		=	职位
+user.post		=	职位
+user.role		=	权限
+user.remark		=	备注
+
+wordType.title	=	字典类别
+wordType.form	=	字典类别
+wordType.form1	=	字典类别
+wordType.name	=	名称
+wordType.pid	=	上一级
+wordType.sort	=	排序
+wordType.flag	=	状态
+wordType.notice	=	备注
+
+word.title		=	字典数据列表
+word.form		=	字典数据信息
+word.form1		=	字典数据
+word.id			=	编号
+word.wordType	=	字典类别
+word.word		=	上一级
+word.name		=	名称
+word.sort		=	排序
+word.flag		=	状态
+word.notice		=	备注
+
+vsit.title		=	回访信息列表
+vsit.form		=	回访信息
+vsit.form1		=	回访信息
+vsit.client		=	客户<font color="red">*</font>
+vsit.stuation		=	产品情况
+vsit.contract		=	合同/订单
+vsit.created		=	时间
+
+cllection.title		=	收款信息列表
+cllection.form		=	收款信息
+cllection.form1		=	收款信息
+cllection.from_s		=	收款信息
+cllection.client		=	客户<font color="red">*</font>
+cllection.contract		=	合同/订单
+cllection.totalPrice		=	金额<font color="red">*</font>
+cllection.currencyRemark		=	外币备注
+cllection.bill		=	开票
+cllection.already		=	已付金额
+cllection.payfor		=	需付金额
+cllection.payType		=	付款方式
+cllection.linkman		=	联系人
+cllection.time			=	回款时间
+cllection.paytype			=	合同类型
+cllection.status		=	状态
+cllection.remark     =  备注
+
+phone.title		=	电话记录列表
+phone.form		=	电话记录
+phone.form1		=	联系信息
+phone.taxId		=	税号
+phone.carId		=	车牌号
+phone.area		=	地区
+phone.institution		=	机构号
+phone.tel		=	固定电话
+phone.mobile		=	手机
+phone.companyAddress		=	公司地址
+phone.companyName		=	公司地址
+phone.carBrands		=	车牌子
+phone.registration		=	登记日期
+phone.title		=	联系记录列表
+phone.name		=	姓名
+phone.companyName		=	公司名称
+phone.product		=	产品名称
+phone.linkman		=	联系人
+phone.time		=	联系时间
+phone.status		=	意向
+phone.type		=	联系方式
+phone.remark		=	联系内容
+phone.highdate 		=	公司名称
+phone.clientType  		=	客户状态
+phone.nextTime  		=	下次联系
+
+talk.title		=	面谈信息列表
+talk.form		=	面谈信息
+talk.form1		=	面谈信息
+talk.name		=	客户
+talk.linkman		=	联系人<font color="red">*</font>
+talk.talkman		=	面谈人<font color="red">*</font>
+talk.address		=	地址
+talk.content		=	 内容<font color="red">*</font>
+talk.talkType		=	状态
+
+
+install.title		=	安装信息列表
+install.form		=	安装信息
+install.form1		=	安装信息
+install.client		=	客户
+install.product     =   产品
+install.contract		=	合同/订单
+install.carId		=	车牌号码
+install.company		=	公司名称
+install.installType		=	状态
+install.installTime		=	安装时间
+install.planCount	=	计划安装
+install.realCount	=	实际安装
+install.hasCount	=	已经安装
+install.notCount	=	未安装
+
+
+returnCall.title		=	回访信息列表
+returnCall.form		=	回访信息
+returnCall.form1		=	回访信息
+returnCall.name		=	客户
+returnCall.status		=	状态
+returnCall.clientName		=	客户<font color="red">*</font>
+returnCall.linkman		=	联系人<font color="red">*</font>
+returnCall.time		=	联系时间
+returnCall.content		=	联系内容
+
+
+
+teamMaterial.name			=	名称
+teamMaterial.sort			=	排序
+teamMaterial.flag			=	状态
+teamMaterial.notice			=	备注
+teamMaterial.pid			=	上一级
+teamMaterial.title			=	车队资料列表
+teamMaterial.form1			=	车队资料
+
+shipmentInformation.checkNumber					=	托运单号
+shipmentInformation.applicationNumber			=	申请单号
+shipmentInformation.customerName				=	客户名称
+shipmentInformation.carryingGoods				=	承运货物
+shipmentInformation.phone						=	客户电话
+shipmentInformation.contact						=	联系人
+shipmentInformation.weight						=	重量
+shipmentInformation.number						=	件数
+shipmentInformation.detailList					=	明细列表
+shipmentInformation.title						=	托运货物信息列表
+
+detailList.goodsNumber				=	货物编号
+detailList.goodsName				=	货物名称
+detailList.weight					=	重量
+detailList.receivingUnit			=	收货单位
+detailList.destinationAddress		=	收货地址
+detailList.licenseNumber			=	车牌号码
+detailList.name						=	司机姓名
+detailList.teamName					=	车队名称
+detailList.freight					=	运费
+detailList.insuranceFee				=	保险费
+detailList.note						=	备注
+detailList.shipmentInformation		=	货物信息
+detailList.form						=	托运货物明细列表
+
+warehouseInformation.name			=	名称
+warehouseInformation.sort			=	排序
+warehouseInformation.flag			=	状态
+warehouseInformation.notice			=	备注
+warehouseInformation.pid			=	上一级
+warehouseInformation.title			=	仓库信息列表
+
+
+gatheringInformation.entrustUnit			=	委托单位
+gatheringInformation.businessUnit			=	经营单位
+gatheringInformation.entrustNumber			=	委托单号
+gatheringInformation.deliverylocation		=	发货地点
+gatheringInformation.extractNumber			=	提单号
+gatheringInformation.contractNumber			=	合同编号
+gatheringInformation.settlementAmount		=	结算金额
+gatheringInformation.gatheringStatements	=	收款报表
+gatheringInformation.title					=	收款信息列表
+gatheringInformation.form1					=	收款信息
+
+
+gatheringStatements.entrustUnit				=	委托单位
+gatheringStatements.businessUnit			=	经营单位
+gatheringStatements.contractNumber			=	合同编号
+gatheringStatements.goodsName				=	货物名称
+gatheringStatements.extractNumber			=	提单号
+gatheringStatements.contractNumber			=	合同编号
+gatheringStatements.bankAccount				=	银行账户
+gatheringStatements.payment					=	应付款项
+gatheringStatements.advancedPayment			=	预付款项
+gatheringStatements.note					=	备注
+gatheringStatements.gatheringInformation	=	收款信息
+gatheringStatements.form					=	收款报表
+
+shipmentInformation.form1					=	托运物品信息
+
+
+
+clientType.title		=	客户类别列表
+clientType.form		=	客户类别
+clientType.form1		=	客户类别
+clientType.pid		=	选择上级<font color="red">*</font>
+clientType.name		=	名称<font color="red">*</font>
+clientType.form1		=	客户分类
+clientType.name		=	名称
+clientType.sort		=	分类
+clientType.flag    =  状态
+clientType.notice   =  内容
+
+diaryType.title		=	日志分类信息
+diaryType.name		=	业务员
+diaryType.sort		=	排序
+diaryType.flag		=	状态
+diaryType.notice	=	备注
+diaryType.form1		=	分类信息
+type.pid		=	主菜单
+
+diary.title    =   日志列表
+diary.form1		=	日志信息
+diary.created		=	日志时间
+diary.content		=	日志内容
+diary.user		=	用户
+
+highData.title		=	公海数据列表
+highData.form		=	公海数据
+highData.form1		=	公海数据
+highData.name		=	使用人
+highData.carNum		=	车牌号码
+highData.area		=	地区
+highData.tel		=	固定电话
+highData.mobile		=	手机
+highData.companyAddress		=	公司地址
+highData.companyName		=	公司名称
+highData.carBrands		=	车辆品牌
+highData.registration		=	登记日期
+highData.carCount		=	车辆数量
+highData.linkman		=	联系人
+highData.linkTime		=	最后联系
+highData.linkCount      =   联系次数
+highData.nextTime  		=	下次联系
+
+follow.title		=	跟踪面谈列表
+follow.form		=	跟踪面谈
+follow.form1		=	跟踪信息
+follow.name		=	姓名
+follow.carId		=	车牌号码
+follow.area		=	地区
+follow.tel		=	固定电话
+follow.mobile		=	手机
+follow.companyAddress		=	公司地址
+follow.companyName		=	公司名称
+follow.carBrands		=	车辆品牌
+follow.registration		=	登记日期
+follow.contact		=	联系人
+follow.time		=	时间
+follow.type		=	意向分类
+follow.callTimes		=	拔打次数
+follow.remark		=	备注
+
+client.title		=	客户列表
+client.form		=	客户
+client.form1		=	客户信息
+client.linkman    =   联系人
+client.name		=	姓名
+client.product		=	产品名
+client.mobile		=	手机
+client.tel		=	工作电话
+client.qq		=	QQ号
+client.email		=	邮箱
+client.carNum		=	车牌号码
+client.area		=	地区
+client.companyName		=	公司名称
+client.companyAddress		=	公司地址
+client.carBrands		=	车辆品牌
+client.registration		=	登记日期
+client.client		=	联系人
+client.time		=	时间
+client.type		=	类别
+client.user		=	业务员
+
+
+clientCall.title		=	客户投诉列表
+clientCall.form		=	客户咨询
+clientCall.form1		=	客户投诉表
+clientCall.clientName  =  客户
+clientCall.linkman		=	联系人
+clientCall.time		=	时间
+clientCall.status		=	状态
+clientCall.content		=	联系内容
+
+
+planBack.title		=	计划信息列表
+planBack.form		=	计划信息
+planBack.form1		=	计划信息
+planBack.contract		=	合同号
+planBack.time		=	计划日期
+planBack.payfor		=	计划金额
+planBack.contract		=	合同
+planBack.client		=	客户
+planBack.code =  合同号
+
+quickWord.title		=	快捷用语列表
+quickWord.form		=	快捷信息
+quickWord.form1		=	快捷信息
+quickWord.name 		=	名称
+quickWord.value		=	值
+
+
+saleStatis.title		=	销售报表列表
+saleStatis.form		=	销售报表
+saleStatis.form1		=	销售信息
+saleStatis.user		=	用户
+saleStatis.created 		=	时间
+saleStatis.phoneCount		=	联系次数
+saleStatis.contractsCount	=	签单数
+
+depart.title = 部门列表
+depart.name = 部门名称
+depart.flag = 状态
+depart.sort = 排序
+depart.notice = 备注
+depart.pid = 上一级
+depart.form1 = 部门信息
+menu.title = 菜单列表
+menu.name = 菜单名称
+menu.url = URL
+menu.target = 方式
+menu.sort = 排序
+menu.flag = 状态
+menu.form1 = 菜单信息
+menu.icon = 图片
+role.title =权限列表
+role.name = 权限名称
+role.sort = 排序
+menu.pid = 上一级
+option.close = 关闭
+option.save = 修改   
+wordType.title = 字典类别
+wordType.name = 名称
+wordType.sort = 排序
+wordType.flag= 状态
+wordType.notice = 备注 
+wordType.pid = 上一级
+wordType.form1= 字典信息
+word.title = 数据列表
+word.wordType = 字典类型
+word.name = 名称
+word.sort = 排序
+word.flag = 状态
+word.notice = 备注
+word.form1 = 数据信息 
+user.form1 = 员工信息
+user.username  = 用户名
+user.email = 邮箱
+object.post = 职位
+user.role = 角色
+user.remark = 备注
+user.title = 员工信息
+user.truename = 真实姓名
+user.sex = 性别
+user.tel = 电话
+user.mobile = 手机号
+user.cornet = 短号
+user.login = 登录次数
+user.depart = 部门
+user.post = 职位
+option.title  = 操作
+user.status = 状态
+
+user.password = 密码

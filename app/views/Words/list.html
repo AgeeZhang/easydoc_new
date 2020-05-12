@@ -1,0 +1,15 @@
+#{extends "main_list.html"/}
+%{
+    def map = [:]
+    map['object'] 		= "word"
+    map['fields'] 		= ['wordType','name','sort','flag','notice']
+    map['widths'] 		= ['20','20','10','10','27']
+    map['width']		= 600
+    map['height']		= 350
+    map['searchFields'] = ['name']
+}%
+#{table.list map}
+#{table.custom 'flag'}
+${(row.flag==1)?"使用":"停用"}
+#{/table.custom}
+#{/table.list}

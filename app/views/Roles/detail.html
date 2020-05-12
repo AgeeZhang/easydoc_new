@@ -1,0 +1,50 @@
+#{extends "main_list.html"/}
+#{set title:"修改权限"/}
+%{
+	def map = [:]
+	map['show']	  = true
+	map['fields'] = ['form_s','name','sort','menu','form_e']
+	map['type']	  = ['text','text','text','text','text']
+	map['widths'] = ['50','50','50','100','50']
+	map['input'] = [:]
+}%
+#{form @@save(object.id)}
+#{table.form map,model:role}
+#{table.custom 'menu'}
+<p><label>&{'role.menu'}</label></p>
+#{list menu_p,as:'p'}
+<div class="field" style="width: 100%;">
+<div style="float:left; width: 80px;padding-left:2px;">
+<input type="checkbox" class="p_menu" name="menus" id="${p.cid}" cid="${p.cid}" value="${p.id}"${((","+object.menu+",").indexOf(","+p.id+",")>-1)?" checked=checked":""}/>${p.name}
+</div>
+#{list menu_c,as:'c'}
+#{if c.pid == p.cid}
+<div style="float:left; width: 80px;padding-left:10px;">
+<input type="checkbox" class="c_menu" name="menus" id="${c.cid}" cid="${c.cid}" pid="${c.pid}" value="${c.id}"${((","+object.menu+",").indexOf(","+c.id+",")>-1)?" checked=checked":""}/>${c.name}</div>
+#{/if}
+#{/list}
+</div>
+#{/list}
+#{/table.custom}
+#{/table.form}
+#{/form}
+<script>
+$(function(){
+$(".p_menu").click(function(){
+	cid = $(this).attr("cid");
+	checked = $(this).attr("checked");
+	$(".c_menu").each(function(){
+		if($(this).attr("pid")==cid){
+			$(this).attr("checked",checked);
+		}
+	});
+});
+$(".c_menu").click(function(){
+	pid = $(this).attr("pid");
+	checked = $(this).attr("checked");
+	if(checked){
+		$("#"+pid).attr("checked",checked);
+	}
+});
+})
+</script>

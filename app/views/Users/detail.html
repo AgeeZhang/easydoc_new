@@ -1,0 +1,18 @@
+#{extends "main_list.html"/}
+#{set title:"查看员工"/}
+%{
+map = [:]
+map['show']		=	true
+map['fields']		=	['form_s','username','truename','sex','email','tel','mobile','cornet','login','status','depart','post','role','remark','form_e']
+map['type']			=	['text','text','text','select','text','text','text','text','text','select','relationTree','word','relation','longtext','text']
+map['widths']		=	['50','50','50','50','50','50','50','50','50','50','50','50','50','100','50']
+map['input']  		= 	[:]
+map['input']['sex']	=	['男':'男','女':'女']
+map['input']['status']	=	['1':'启用','2':'停用']
+map['input']['depart']	=	['sql':'from Depart where flag = 1 order by sort','name':'name']
+map['input']['post']	=	['type':1,'to':'','field':'name']
+map['input']['role']	=	['sql':'from Role order by sort','name':'name']
+map['input']['remark']	=	['rows':'5','cols':'30']
+
+}%
+#{table.form map/}
